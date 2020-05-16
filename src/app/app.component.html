@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-12 border">
+    <span>Inserisci qui il tuo testo!</span>
+  </div>
+  <div class="border col">
+    <input type="text" [ngModel]="search" class="form-control" 
+    (ngModelChange)="onInput($event)" style="width:18%;" placeholder="search...">
+    <div class="col-12 " style="width:18%;">
+      <div *ngIf="response.length > 0" class="autocomplete-dropdown dropdown-menu border-color">
+        <div *ngFor="let res of response; let i = index" class="automplete-cursor hover"(click)="select(res)" >
+          <div [ngClass]="search === res ? 'selected' : ''">
+            <span class="automplete-format">
+              {{res}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

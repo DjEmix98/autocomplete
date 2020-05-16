@@ -1,0 +1,35 @@
+.border {
+
+    padding-left: 2%;
+}
+
+.autocomplete-dropdown {
+    visibility: visible;
+    font-size: 14px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif !important;
+    width: 100%;
+    margin-top: 1px;
+}
+
+.automplete-cursor{
+    cursor: pointer;
+}
+
+.hover:hover {
+
+    background-color: rgb(165, 158, 158);
+}
+
+.selected {
+    background-color: rgb(165, 158, 158);
+}
+
+.automplete-format{
+    margin: 1px;
+    white-space: normal !important;
+}
+
+.border-color {
+
+    border: 1px solid blue;
+}
